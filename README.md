@@ -14,7 +14,7 @@ This node script is intended to be used in order to translate Google takeout loc
         - __`.json`__ locations history file
 
 
-## Google location history json file
+### Google location history json file
 
 ```json
 {
@@ -72,7 +72,7 @@ This node script is intended to be used in order to translate Google takeout loc
 ```
 
 
-## Google location history in GeoJson format
+### Google location history in GeoJson format
 
 ```json
 {
