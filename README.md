@@ -149,3 +149,8 @@ Note that you can as well set only one of the two bounds either the lower or the
 ## Process logs
 
 ![alt text](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/raw/master/README.png)
+
+
+# More cool logs
+
+![alt text](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/raw/master/README_2.png)
