@@ -113,7 +113,7 @@ This node script is intended to be used in order to translate Google takeout loc
 
 - Copy one or more Google location history json files inside the `./input` folder
 - `npm run start [-- fromTimestampMs toTimestampMs]`
-- Access the GeoJson results of the translation inside the `./output` folder
+- Access the GeoJson files results of the translation inside the `./output` folder
 
 
 ## Params
