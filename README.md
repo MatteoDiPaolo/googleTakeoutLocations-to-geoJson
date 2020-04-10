@@ -138,9 +138,13 @@ Note that you can as well set only one of the two bounds either the lower or the
 
 # Exectution example output
 
-Input folder content
+
+## Input folder content
 - empty.json
 - 1_locations.json
 - 4_locations.json
+
+
+## Process logs
 
 ![alt text](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/raw/master/README.png)
