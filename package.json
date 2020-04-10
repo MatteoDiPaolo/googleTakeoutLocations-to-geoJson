@@ -2,8 +2,8 @@
   "name": "googletakeoutlocations_to_geojson",
   "version": "1.0.0",
   "description": "Node stream based google takeout locations json to geojson translator",
-  "main": "index.js",
   "scripts": {
+    "start": "node ./src/index.js",
     "test": "mocha --reporter spec './test/**/*.test.js'"
   },
   "repository": {

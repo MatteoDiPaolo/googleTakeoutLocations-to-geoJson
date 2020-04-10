@@ -9,8 +9,8 @@ const main = async () => {
     const toTimestampMs = /^[0-9]{13}$/.test(process.argv[3]) ? process.argv[3] : null;
 
     const filesToProcess = fs.readdirSync(path.join(process.cwd(), './input')).filter(file => file.endsWith('.json'));
-    console.log('\x1b[36m', `\n\n< --- FILES TO PROCESS = ${filesToProcess.length} --- >`, '\x1b[0m')
-    filesToProcess.forEach((file, index) => console.log('-', index, file))
+    console.log('\x1b[36m', `\n\n< --- FILES TO PROCESS = `, '\x1b[33m', `${filesToProcess.length}`, '\x1b[36m', ` --- >`, '\x1b[0m')
+    filesToProcess.forEach((file, index) => console.log('-', index + 1, file))
 
     let results = [];
     let errors = [];
