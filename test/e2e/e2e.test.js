@@ -29,7 +29,7 @@ describe('Tanslator test', () => {
         await copyFile(path.join(mockInputDirectory, file), path.join(inputDirectory, file));
         await asyncExec('node src/index.js');
 
-        const outputFiles = fs.readdirSync(outputDirectory);
+        const outputFiles = fs.readdirSync(outputDirectory).filter(file => file !== '.gitignore');
         expect(outputFiles).to.eql([]);
     });
 
@@ -38,7 +38,7 @@ describe('Tanslator test', () => {
         await copyFile(path.join(mockInputDirectory, file), path.join(inputDirectory, file));
         await asyncExec('node src/index.js');
 
-        const outputFiles = fs.readdirSync(outputDirectory);
+        const outputFiles = fs.readdirSync(outputDirectory).filter(file => file !== '.gitignore');
         expect(outputFiles).to.eql([file]);
 
         const outputFileContent = fs.readFileSync(path.join(outputDirectory, file), 'utf8');
@@ -53,7 +53,7 @@ describe('Tanslator test', () => {
         await copyFile(path.join(mockInputDirectory, file), path.join(inputDirectory, file));
         await asyncExec('node src/index.js');
 
-        const outputFiles = fs.readdirSync(outputDirectory);
+        const outputFiles = fs.readdirSync(outputDirectory).filter(file => file !== '.gitignore');
         expect(outputFiles).to.eql([file]);
 
         const outputFileContent = fs.readFileSync(path.join(outputDirectory, file), 'utf8');
@@ -68,7 +68,7 @@ describe('Tanslator test', () => {
         await copyFile(path.join(mockInputDirectory, file), path.join(inputDirectory, file));
         await asyncExec('node src/index.js 1507330772003 _');
 
-        const outputFiles = fs.readdirSync(outputDirectory);
+        const outputFiles = fs.readdirSync(outputDirectory).filter(file => file !== '.gitignore');
         expect(outputFiles).to.eql([file]);
 
         const outputFileContent = fs.readFileSync(path.join(outputDirectory, file), 'utf8');
@@ -83,7 +83,7 @@ describe('Tanslator test', () => {
         await copyFile(path.join(mockInputDirectory, file), path.join(inputDirectory, file));
         await asyncExec('node src/index.js _ 1507330772000');
 
-        const outputFiles = fs.readdirSync(outputDirectory);
+        const outputFiles = fs.readdirSync(outputDirectory).filter(file => file !== '.gitignore');
         expect(outputFiles).to.eql([file]);
 
         const outputFileContent = fs.readFileSync(path.join(outputDirectory, file), 'utf8');
@@ -98,7 +98,7 @@ describe('Tanslator test', () => {
         await copyFile(path.join(mockInputDirectory, file), path.join(inputDirectory, file));
         await asyncExec('node src/index.js 1507330772001 1507330772002');
 
-        const outputFiles = fs.readdirSync(outputDirectory);
+        const outputFiles = fs.readdirSync(outputDirectory).filter(file => file !== '.gitignore');
         expect(outputFiles).to.eql([file]);
 
         const outputFileContent = fs.readFileSync(path.join(outputDirectory, file), 'utf8');
@@ -115,7 +115,7 @@ describe('Tanslator test', () => {
         await copyFile(path.join(mockInputDirectory, fileTwo), path.join(inputDirectory, fileTwo));
         await asyncExec('node src/index.js');
 
-        const outputFiles = fs.readdirSync(outputDirectory);
+        const outputFiles = fs.readdirSync(outputDirectory).filter(file => file !== '.gitignore');
         expect(outputFiles).to.eql([fileOne, fileTwo]);
 
         const outputFileOneContent = fs.readFileSync(path.join(outputDirectory, fileOne), 'utf8');
