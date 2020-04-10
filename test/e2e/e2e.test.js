@@ -49,7 +49,7 @@ describe('Tanslator test', () => {
     });
 
     it('Should translate 4 locations to 4 locations without filters', async () => {
-        const file = 'n_locations.json';
+        const file = '4_locations.json';
         await copyFile(path.join(mockInputDirectory, file), path.join(inputDirectory, file));
         await asyncExec('node src/index.js');
 
@@ -64,7 +64,7 @@ describe('Tanslator test', () => {
     });
 
     it('Should translate 4 locations to 1 locations with lower bound filter', async () => {
-        const file = 'n_locations.json';
+        const file = '4_locations.json';
         await copyFile(path.join(mockInputDirectory, file), path.join(inputDirectory, file));
         await asyncExec('node src/index.js 1507330772003 _');
 
@@ -79,7 +79,7 @@ describe('Tanslator test', () => {
     });
 
     it('Should translate 4 locations to 1 locations with upper bound filter', async () => {
-        const file = 'n_locations.json';
+        const file = '4_locations.json';
         await copyFile(path.join(mockInputDirectory, file), path.join(inputDirectory, file));
         await asyncExec('node src/index.js _ 1507330772000');
 
@@ -94,7 +94,7 @@ describe('Tanslator test', () => {
     });
 
     it('Should translate 4 locations to 2 locations with lower and upper bound filter', async () => {
-        const file = 'n_locations.json';
+        const file = '4_locations.json';
         await copyFile(path.join(mockInputDirectory, file), path.join(inputDirectory, file));
         await asyncExec('node src/index.js 1507330772001 1507330772002');
 
@@ -110,7 +110,7 @@ describe('Tanslator test', () => {
 
     it('Should translate 2 files 1 to 1 and 4 to 4 locations without filters', async () => {
         const fileOne = '1_locations.json';
-        const fileTwo = 'n_locations.json';
+        const fileTwo = '4_locations.json';
         await copyFile(path.join(mockInputDirectory, fileOne), path.join(inputDirectory, fileOne));
         await copyFile(path.join(mockInputDirectory, fileTwo), path.join(inputDirectory, fileTwo));
         await asyncExec('node src/index.js');
