@@ -1,0 +1,25 @@
+{
+  "name": "googletakeoutlocations_to_geojson",
+  "version": "1.0.0",
+  "description": "Node stream based google takeout locations json to geojson translator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson.git"
+  },
+  "keywords": [
+    "node",
+    "stream",
+    "google_takeout_location",
+    "geojson"
+  ],
+  "author": "MatteoDiPaolo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/issues"
+  },
+  "homepage": "https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson#readme"
+}
