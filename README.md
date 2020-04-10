@@ -104,7 +104,7 @@ This node script is intended to be used in order to translate Google takeout loc
 - `npm i`
 
 
-# Run tests
+# Test
 
 - `npm run test`
 
