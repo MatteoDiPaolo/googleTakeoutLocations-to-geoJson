@@ -114,6 +114,7 @@ This node script is intended to be used in order to translate Google takeout loc
 - Copy one or more Google location history json files inside the input folder
 - `npm run start [-- fromTimestampMs toTimestampMs]`
 
+
 ## Params
 
 You can optionally set a time range window in order to filter locations out of the output.<br>
@@ -123,10 +124,23 @@ Timestamp parameters must be defined as milliseconds epoch timestamps.
 
 Note that you can as well set only one of the two bounds either the lower or the upper one
 
+
 ## Examples
-1. Maintain only locations with timestamp between __Tuesday, 1 January 2019 00:00:00__ and __Tuesday, 31 December 2019 23:59:59__
+1. Translate files without applying time filtering
+    - `npm run start`
+2. Maintain only locations with timestamp between __Tuesday, 1 January 2019 00:00:00__ and __Tuesday, 31 December 2019 23:59:59__
     - `npm run start -- 1546300800000 1577836799000`
-2. Maintain only locations with timestamp subsequent to __Tuesday, 1 January 2019 00:00:00__ 
+3. Maintain only locations with timestamp subsequent to __Tuesday, 1 January 2019 00:00:00__ 
     - `npm run start -- 1546300800000`
-2. Maintain only locations with timestamp prior to __Tuesday, 31 December 2019 23:59:59__ 
+4. Maintain only locations with timestamp prior to __Tuesday, 31 December 2019 23:59:59__ 
     - `npm run start -- x 1577836799000`
+
+
+# Exectution example output
+
+Input folder content
+- empty.json
+- 1_locations.json
+- 4_locations.json
+
+![alt text](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/raw/master/README.png)
