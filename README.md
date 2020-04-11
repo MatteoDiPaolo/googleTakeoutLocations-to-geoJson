@@ -98,6 +98,7 @@ This node script is intended to be used in order to translate Google takeout loc
 }
 ```
 
+
 # Prerequisites
 
 - `node v13.7.0`
