@@ -6,6 +6,10 @@
     "start": "node ./src/index.js",
     "test": "mocha --reporter spec './test/**/*.test.js'"
   },
+  "engines": {
+    "node": "13.7.0",
+    "npm": "6.13.6"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson.git"
