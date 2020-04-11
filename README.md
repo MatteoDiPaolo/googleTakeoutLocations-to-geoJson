@@ -193,9 +193,15 @@ Note that you can as well set only one of the two bounds either the lower or the
 
 # More cool logs
 
-Please note the journey of the **_2.json_** file
+Command: `npm run start` over 5 input files.
+
+Please note the journey of the **_2.json_** file:
 - 1167.11297 Mb --> __1.16 GB__
 - 3688763 --> __almost 4 milion locations processed__
 - 551.443 Secs --> __almost 10 minutes processing__
 
 ![alt text](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/raw/master/README_3.png)
+
+Command: `npm run start -- 1546300800000 1577836799000` over 5 input files.
+
+![alt text](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/raw/master/README_4.png)
