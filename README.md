@@ -127,7 +127,6 @@ Defined in the [streaProcessing](https://github.com/MatteoDiPaolo/GoogleTakeoutL
 6. ![#D6B656](https://placehold.it/15/D6B656/000000?text=+) __[Transform]__ --- **_streamString_** --> It stringifies GeoJson locations.
 7. ![#B85450](https://placehold.it/15/B85450/000000?text=+) __[Write]__ --- **_streamToFile_** --> Stream to Output file.
 
-Detailed in the following graph:
 ![alt text](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/raw/master/README_1.png)
 
 
