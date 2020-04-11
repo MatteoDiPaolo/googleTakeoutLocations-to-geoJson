@@ -205,6 +205,6 @@ Please note the journey of the **_2.json_** file:
 
 ### Command: `npm run start -- 1546300800000 1577836799000` over 5 input files.
 
-Please note how the number of the GeoJson locations in the output decreases.
+Please note how the number of GeoJson locations in the output decreases.
 
 ![alt text](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/raw/master/README_4.png)
