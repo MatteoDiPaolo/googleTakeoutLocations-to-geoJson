@@ -131,7 +131,7 @@ Defined in the [streamProcessing](https://github.com/MatteoDiPaolo/GoogleTakeout
 6. ![#D6B656](https://placehold.it/15/D6B656/000000?text=+) __[Transform]__ --- **_streamStringer_** --> It stringifies GeoJson locations.
 7. ![#B85450](https://placehold.it/15/B85450/000000?text=+) __[Write]__ --- **_streamToFile_** --> Stream to Output file.
 
-![alt text](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/raw/master/README_1.png)
+![README_1.png](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/raw/master/README_1.png)
 
 
 # Prerequisites
@@ -188,7 +188,7 @@ Note that you can as well set only one of the two bounds either the lower or the
 
 ### Process logs
 
-![alt text](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/raw/master/README_2.png)
+![README_2.png](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/raw/master/README_2.png)
 
 
 # More cool logs
@@ -201,10 +201,15 @@ Please note the journey of the **_2.json_** file:
 - 3688763 --> __almost 4 milion locations processed__
 - 551.443 Secs --> __almost 10 minutes processing__
 
-![alt text](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/raw/master/README_3.png)
+![README_3.png](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/raw/master/README_3.png)
 
 ### Command: `npm run start -- 1546300800000 1577836799000` over 5 input files.
 
 Please note how the number of GeoJson locations in the output decreases.
 
-![alt text](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/raw/master/README_4.png)
+![README_4.png](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/raw/master/README_4.png)
+
+
+# Possible bug
+
+- [latitude and longitude data incorrect in google takeout file](https://support.google.com/maps/thread/4595364?hl=en)
