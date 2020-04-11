@@ -104,7 +104,7 @@ A basic example of an output file
 
 
 # Stream based approach
-Even if the transformation is straightforward it is not possible to achieve it using a simple array map beacuase of the huge amount of data to manage. 
+Even if the transformation is straightforward it is not possible to achieve it using a simple array map because of the huge amount of data to manage. 
 
 
 ### Error arising without using streams
@@ -126,9 +126,9 @@ Defined in the [streamProcessing](https://github.com/MatteoDiPaolo/GoogleTakeout
 1. ![#82B366](https://placehold.it/15/82B366/000000?text=+) __[Read]__ --- **_fileToStream_** --> Input file to stream.
 2. ![#D6B656](https://placehold.it/15/D6B656/000000?text=+) __[Transform]__ --- **_streamParser_** --> Consumes text, and produces a stream of data items corresponding to high-level tokens.
 3. ![#D6B656](https://placehold.it/15/D6B656/000000?text=+) __[Transform]__ --- **_streamPicker_** --> Is a token item filter, it selects objects from a stream ignoring the rest and produces a stream of objects (_locations_ in our case).
-4. ![#D6B656](https://placehold.it/15/D6B656/000000?text=+) __[Transform]__ --- **_streamPArrayer_** --> It assumes that an input token stream represents an array of objects and streams out assembled JavaScript objects (locations in our case).
+4. ![#D6B656](https://placehold.it/15/D6B656/000000?text=+) __[Transform]__ --- **_streamArrayer_** --> It assumes that an input token stream represents an array of objects and streams out assembled JavaScript objects (locations in our case).
 5. ![#D6B656](https://placehold.it/15/D6B656/000000?text=+) __[Transform]__ --- **_streamGeoJsoner_** --> It transforms google takeout locations into GeoJson locations.
-6. ![#D6B656](https://placehold.it/15/D6B656/000000?text=+) __[Transform]__ --- **_streamString_** --> It stringifies GeoJson locations.
+6. ![#D6B656](https://placehold.it/15/D6B656/000000?text=+) __[Transform]__ --- **_streamStringer_** --> It stringifies GeoJson locations.
 7. ![#B85450](https://placehold.it/15/B85450/000000?text=+) __[Write]__ --- **_streamToFile_** --> Stream to Output file.
 
 ![alt text](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/raw/master/README_1.png)
