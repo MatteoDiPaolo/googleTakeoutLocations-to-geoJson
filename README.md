@@ -119,13 +119,13 @@ Node cannot buffer the file for us because:
 
 Defined in the [streaProcessing](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/blob/master/src/lib/streamProcessing.js) utility.
 
-1. __[Read]__ ![#82B366](https://placehold.it/15/82B366/000000?text=+) --- **_fileToStream_** --> Input file to stream.
-2. __[Transform]__ ![#D6B656](https://placehold.it/15/D6B656/000000?text=+) --- **_streamParser_** --> Consumes text, and produces a stream of data items corresponding to high-level tokens.
-3. __[Transform]__ ![#D6B656](https://placehold.it/15/D6B656/000000?text=+) --- **_streamPicker_** --> Is a token item filter, it selects objects from a stream ignoring the rest and produces a stream of objects (_locations_ in our case).
-4. __[Transform]__ ![#D6B656](https://placehold.it/15/D6B656/000000?text=+) --- **_streamPArrayer_** --> It assumes that an input token stream represents an array of objects and streams out assembled JavaScript objects (locations in our case).
-5. __[Transform]__ ![#D6B656](https://placehold.it/15/D6B656/000000?text=+) --- **_streamGeoJsoner_** --> It transforms google takeout locations into GeoJson locations.
-6. __[Transform]__ ![#D6B656](https://placehold.it/15/D6B656/000000?text=+) --- **_streamString_** --> It stringifies GeoJson locations.
-7. __[Write]__ ![#B85450](https://placehold.it/15/B85450/000000?text=+) --- **_streamToFile_** --> Stream to Output file.
+1. ![#82B366](https://placehold.it/15/82B366/000000?text=+) __[Read]__ --- **_fileToStream_** --> Input file to stream.
+2. ![#D6B656](https://placehold.it/15/D6B656/000000?text=+) __[Transform]__ --- **_streamParser_** --> Consumes text, and produces a stream of data items corresponding to high-level tokens.
+3. ![#D6B656](https://placehold.it/15/D6B656/000000?text=+) __[Transform]__ --- **_streamPicker_** --> Is a token item filter, it selects objects from a stream ignoring the rest and produces a stream of objects (_locations_ in our case).
+4. ![#D6B656](https://placehold.it/15/D6B656/000000?text=+) __[Transform]__ --- **_streamPArrayer_** --> It assumes that an input token stream represents an array of objects and streams out assembled JavaScript objects (locations in our case).
+5. ![#D6B656](https://placehold.it/15/D6B656/000000?text=+) __[Transform]__ --- **_streamGeoJsoner_** --> It transforms google takeout locations into GeoJson locations.
+6. ![#D6B656](https://placehold.it/15/D6B656/000000?text=+) __[Transform]__ --- **_streamString_** --> It stringifies GeoJson locations.
+7. ![#B85450](https://placehold.it/15/B85450/000000?text=+) __[Write]__ --- **_streamToFile_** --> Stream to Output file.
 
 Detailed in the following graph:
 ![alt text](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/raw/master/README_1.png)
