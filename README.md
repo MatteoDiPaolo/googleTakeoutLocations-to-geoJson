@@ -141,9 +141,9 @@ Note that you can as well set only one of the two bounds either the lower or the
 
 
 ## Input folder content
-- empty.json --> this is going to fail!
 - 1_locations.json
 - 4_locations.json
+- x_empty.json --> this is going to fail!
 
 
 ## Process logs
