@@ -8,6 +8,8 @@ This node script is intended to be used in order to translate Google takeout loc
 
 
 ### Google location history archive
+
+What follows is the content structure of a Google location history archive:
 - __`.zip`__ archive
     - __`.html`__ info file
     - locations history folder
@@ -16,6 +18,7 @@ This node script is intended to be used in order to translate Google takeout loc
 
 ### Google location history json file
 
+A basic example of an input file
 ```json
 {
   "locations": [
@@ -74,6 +77,7 @@ This node script is intended to be used in order to translate Google takeout loc
 
 ### Google location history in GeoJson format
 
+A basic example of an output file
 ```json
 {
   "type": "FeatureCollection",
@@ -100,7 +104,7 @@ This node script is intended to be used in order to translate Google takeout loc
 
 
 # Stream based approach
-Even if the transformation is straightforward it is not possible to achieve it using a simple map beacuase of the huge amount of data to manage. 
+Even if the transformation is straightforward it is not possible to achieve it using a simple array map beacuase of the huge amount of data to manage. 
 
 
 ### Error arising without using streams
@@ -117,7 +121,7 @@ Node cannot buffer the file for us because:
 
 ### Stream solution
 
-Defined in the [streaProcessing](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/blob/master/src/lib/streamProcessing.js) utility.
+Defined in the [streamProcessing](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/blob/master/src/lib/streamProcessing.js) file.
 
 1. ![#82B366](https://placehold.it/15/82B366/000000?text=+) __[Read]__ --- **_fileToStream_** --> Input file to stream.
 2. ![#D6B656](https://placehold.it/15/D6B656/000000?text=+) __[Transform]__ --- **_streamParser_** --> Consumes text, and produces a stream of data items corresponding to high-level tokens.
