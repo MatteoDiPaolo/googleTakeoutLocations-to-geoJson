@@ -141,7 +141,7 @@ Note that you can as well set only one of the two bounds either the lower or the
 
 
 ## Input folder content
-- empty.json
+- empty.json --> this is going to fail!
 - 1_locations.json
 - 4_locations.json
 
@@ -152,5 +152,10 @@ Note that you can as well set only one of the two bounds either the lower or the
 
 
 # More cool logs
+
+Please note the journey of the **_2.json_** file
+- 1167.11297 Mb --> __1.16 GB__
+- 3688763 --> __almost 4 milion locations processed__
+- 551.443 Secs --> __almost 10 minutes processing__
 
 ![alt text](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/raw/master/README_2.png)
