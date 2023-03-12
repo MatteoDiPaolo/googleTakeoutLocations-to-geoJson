@@ -1,5 +1,5 @@
 # Tutorial
-![](https://github.com/MatteoDiPaolo/GoogleTakeoutLocations_to_GeoJson/raw/master/Tutorial.mov)
+[![Youtube Preview](https://img.youtube.com/vi/fmNCKu3cuUc/maxresdefault.jpg)](https://www.youtube.com/watch?v=fmNCKu3cuUc)
 
 # Description
 
